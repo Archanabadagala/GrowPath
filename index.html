@@ -1,0 +1,1550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GrowPath - Learn. Build. Grow.</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= SPLASH SCREEN ================= -->
+
+<div id="splash-screen">
+
+    <div class="splash-logo">G</div>
+
+    <h1>GrowPath</h1>
+
+    <p>Learn. Build. Grow.</p>
+
+    <div class="loading-line"></div>
+
+    <small>Preparing your learning journey...</small>
+
+</div>
+
+
+<!-- ================= LOGIN ================= -->
+
+<div id="login-page">
+
+    <div class="login-container">
+
+        <div class="login-brand">
+
+            <div class="brand-icon">G</div>
+
+            <h1>GrowPath</h1>
+
+            <p>Your personalized path to becoming job-ready.</p>
+
+        </div>
+
+
+        <div class="login-box">
+
+            <h2>Welcome Back 👋</h2>
+
+            <p>Login to continue your learning journey.</p>
+
+            <form id="login-form">
+
+                <label>Email</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <label>Password</label>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="Enter your password"
+                    required
+                >
+
+                <button type="submit">
+                    Login →
+                </button>
+
+            </form>
+
+            <p class="demo-text">
+                Demo login — enter any email and password
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- ================= CAREER SETUP ================= -->
+
+<div id="career-setup">
+
+    <div class="career-setup-card">
+
+        <div class="setup-logo">G</div>
+
+        <span class="eyebrow">
+            WELCOME TO GROWPATH
+        </span>
+
+        <h1>
+            Let's build your career path 🚀
+        </h1>
+
+        <p class="setup-subtitle">
+            Tell us about yourself and we'll create a learning path
+            designed around your career goal.
+        </p>
+
+
+        <!-- CAREER GOAL -->
+
+        <div class="setup-group">
+
+            <label>
+                What do you want to become?
+            </label>
+
+            <input
+                type="text"
+                id="career-goal"
+                placeholder="Type your career goal..."
+            >
+
+            <div class="career-options">
+
+                <button
+                    type="button"
+                    data-career="Software Developer">
+
+                    💻 Software Developer
+
+                </button>
+
+                <button
+                    type="button"
+                    data-career="Data Analyst">
+
+                    📊 Data Analyst
+
+                </button>
+
+                <button
+                    type="button"
+                    data-career="AI / ML Engineer">
+
+                    🤖 AI / ML Engineer
+
+                </button>
+
+                <button
+                    type="button"
+                    data-career="Cloud Engineer">
+
+                    ☁️ Cloud Engineer
+
+                </button>
+
+                <button
+                    type="button"
+                    data-career="Cybersecurity Engineer">
+
+                    🔐 Cybersecurity
+
+                </button>
+
+                <button
+                    type="button"
+                    data-career="UI/UX Designer">
+
+                    🎨 UI/UX Designer
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- CURRENT LEVEL -->
+
+        <div class="setup-group">
+
+            <label>
+                What is your current level?
+            </label>
+
+            <select id="career-level">
+
+                <option value="">
+                    Select your level
+                </option>
+
+                <option value="Beginner">
+                    Beginner
+                </option>
+
+                <option value="Intermediate">
+                    Intermediate
+                </option>
+
+                <option value="Advanced">
+                    Advanced
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <!-- MAIN TARGET -->
+
+        <div class="setup-group">
+
+            <label>
+                What is your main target?
+            </label>
+
+            <select id="career-target">
+
+                <option value="">
+                    Select your target
+                </option>
+
+                <option value="Get an Internship">
+                    Get an Internship
+                </option>
+
+                <option value="Get a Job">
+                    Get a Job
+                </option>
+
+                <option value="College Placements">
+                    College Placements
+                </option>
+
+                <option value="Improve Skills">
+                    Improve Skills
+                </option>
+
+                <option value="Build Projects">
+                    Build Projects
+                </option>
+
+            </select>
+
+        </div>
+
+
+        <button
+            id="create-roadmap-btn"
+            class="primary-btn">
+
+            🚀 Create My Roadmap
+
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- ================= APPLICATION ================= -->
+
+<div id="app">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="logo-area">
+
+            <div class="logo-icon">
+                G
+            </div>
+
+            <div>
+                <h2>GrowPath</h2>
+                <span>Learn. Build. Grow.</span>
+            </div>
+
+        </div>
+
+
+        <nav id="sidebar-nav">
+
+            <a href="#" data-page="dashboard" class="nav-link active">
+                <span>🏠</span>
+                Dashboard
+            </a>
+
+            <a href="#" data-page="roadmap" class="nav-link">
+                <span>🗺️</span>
+                My Roadmap
+            </a>
+
+            <a href="#" data-page="learn" class="nav-link">
+                <span>📺</span>
+                Learn
+            </a>
+
+            <a href="#" data-page="practice" class="nav-link">
+                <span>🧠</span>
+                Practice
+            </a>
+
+            <a href="#" data-page="projects" class="nav-link">
+                <span>💻</span>
+                Projects
+            </a>
+
+            <a href="#" data-page="progress" class="nav-link">
+                <span>📊</span>
+                Progress
+            </a>
+
+            <a href="#" data-page="certificates" class="nav-link">
+                <span>🏆</span>
+                Certificates
+            </a>
+
+            <a href="#" data-page="assistant" class="nav-link">
+                <span>🤖</span>
+                AI Assistant
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="#" data-page="settings" class="nav-link">
+                ⚙️ Settings
+            </a>
+
+            <button id="logout-btn">
+                🚪 Logout
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ================= MAIN AREA ================= -->
+
+    <main class="main-content">
+
+        <!-- TOP BAR -->
+
+        <header class="top-bar">
+
+            <div>
+
+                <h1 id="page-title">
+                    Dashboard
+                </h1>
+
+                <p id="page-subtitle">
+                    Your learning journey at a glance.
+                </p>
+
+            </div>
+
+
+            <div class="profile">
+
+                <div class="notification">
+                    🔔
+                </div>
+
+                <div class="profile-circle">
+                    A
+                </div>
+
+                <div class="profile-info">
+
+                    <strong>
+                        Archana
+                    </strong>
+
+                    <small>
+                        Student
+                    </small>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- ================= PAGE CONTENT ================= -->
+
+        <section id="page-content">
+
+
+            <!-- ================= DASHBOARD ================= -->
+
+            <div
+                class="page dashboard-page"
+                id="dashboard-page">
+
+                <div class="welcome-card">
+
+                    <div>
+
+                        <span>
+                            GOOD MORNING 👋
+                        </span>
+
+                        <h2>
+                            Ready to grow today?
+                        </h2>
+
+                        <p>
+                            Continue learning and move one step closer
+                            to your career goal.
+                        </p>
+
+                    </div>
+
+                    <div class="welcome-icon">
+                        🚀
+                    </div>
+
+                </div>
+
+
+                <div class="stats-grid">
+
+                    <div class="stat-card">
+
+                        <span>🎯</span>
+
+                        <p>
+                            Current Goal
+                        </p>
+
+                        <h3 id="dashboard-goal">
+                            Your Goal
+                        </h3>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <span>📚</span>
+
+                        <p>
+                            Topics Completed
+                        </p>
+
+                        <h3 id="topics-completed">
+                            0
+                        </h3>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <span>🔥</span>
+
+                        <p>
+                            Learning Streak
+                        </p>
+
+                        <h3>
+                            7 Days
+                        </h3>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <span>📈</span>
+
+                        <p>
+                            Overall Progress
+                        </p>
+
+                        <h3 id="overall-progress">
+                            0%
+                        </h3>
+
+                    </div>
+
+                </div>
+
+
+                <div class="dashboard-grid">
+
+                    <div class="content-card">
+
+                        <div class="card-header">
+
+                            <div>
+
+                                <h3>
+                                    Continue Learning
+                                </h3>
+
+                                <p>
+                                    Pick up where you left off.
+                                </p>
+
+                            </div>
+
+                            <button
+                                class="small-btn"
+                                data-page-button="learn">
+
+                                View All
+
+                            </button>
+
+                        </div>
+
+
+                        <div class="learning-item">
+
+                            <div class="course-icon">
+                                ☕
+                            </div>
+
+                            <div>
+
+                                <h4>
+                                    Java Data Structures
+                                </h4>
+
+                                <p>
+                                    Arrays & Strings
+                                </p>
+
+                                <div class="mini-progress">
+                                    <div style="width:65%"></div>
+                                </div>
+
+                            </div>
+
+                            <strong>
+                                65%
+                            </strong>
+
+                        </div>
+
+
+                        <div class="learning-item">
+
+                            <div class="course-icon">
+                                🌐
+                            </div>
+
+                            <div>
+
+                                <h4>
+                                    JavaScript Basics
+                                </h4>
+
+                                <p>
+                                    Functions & DOM
+                                </p>
+
+                                <div class="mini-progress">
+                                    <div style="width:35%"></div>
+                                </div>
+
+                            </div>
+
+                            <strong>
+                                35%
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="content-card">
+
+                        <div class="card-header">
+
+                            <div>
+
+                                <h3>
+                                    AI Recommendation
+                                </h3>
+
+                                <p>
+                                    GrowPath AI suggestion.
+                                </p>
+
+                            </div>
+
+                            <span class="ai-badge">
+                                AI
+                            </span>
+
+                        </div>
+
+
+                        <div class="ai-recommendation">
+
+                            <div class="ai-icon">
+                                🤖
+                            </div>
+
+                            <h4>
+                                Practice Arrays Today
+                            </h4>
+
+                            <p>
+                                You have completed the basics.
+                                Try 3 array problems to improve
+                                your problem-solving skills.
+                            </p>
+
+                            <button
+                                class="primary-btn"
+                                data-page-button="practice">
+
+                                Start Practice →
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= ROADMAP ================= -->
+
+            <div
+                class="page"
+                id="roadmap-page">
+
+                <div class="page-intro">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            YOUR CAREER PATH
+                        </span>
+
+                        <h2>
+                            My Personalized Roadmap
+                        </h2>
+
+                        <p>
+                            A step-by-step learning path created for your goal.
+                        </p>
+
+                    </div>
+
+                    <div class="goal-box" id="roadmap-goal">
+                        🎯 Your Goal
+                    </div>
+
+                </div>
+
+
+                <div class="roadmap-progress-card">
+
+                    <div>
+
+                        <strong>
+                            Overall Roadmap Progress
+                        </strong>
+
+                        <p>
+                            0% completed
+                        </p>
+
+                    </div>
+
+                    <strong>
+                        0%
+                    </strong>
+
+                </div>
+
+
+                <!-- DYNAMIC ROADMAP -->
+
+                <div class="roadmap">
+
+                    <div id="roadmap-container">
+
+                        <div class="roadmap-loading">
+                            Loading your personalized roadmap...
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= LEARN ================= -->
+
+            <div
+                class="page"
+                id="learn-page">
+
+                <div class="page-intro">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            LEARNING HUB
+                        </span>
+
+                        <h2>
+                            Learn
+                        </h2>
+
+                        <p>
+                            Find the best learning resources for your roadmap.
+                        </p>
+
+                    </div>
+
+                    <button class="primary-btn">
+                        + Add Learning Goal
+                    </button>
+
+                </div>
+
+
+                <div class="search-box">
+
+                    🔍
+
+                    <input
+                        type="text"
+                        placeholder="Search topics, courses or skills..."
+                    >
+
+                </div>
+
+
+                <div class="resource-grid">
+
+                    <div class="resource-card">
+
+                        <div class="resource-icon">
+                            ☕
+                        </div>
+
+                        <h3>
+                            Java
+                        </h3>
+
+                        <p>
+                            Learn Java from basics to advanced concepts.
+                        </p>
+
+                        <button class="outline-btn">
+                            Explore →
+                        </button>
+
+                    </div>
+
+
+                    <div class="resource-card">
+
+                        <div class="resource-icon">
+                            🌐
+                        </div>
+
+                        <h3>
+                            JavaScript
+                        </h3>
+
+                        <p>
+                            Build interactive websites and applications.
+                        </p>
+
+                        <button class="outline-btn">
+                            Explore →
+                        </button>
+
+                    </div>
+
+
+                    <div class="resource-card">
+
+                        <div class="resource-icon">
+                            🗄️
+                        </div>
+
+                        <h3>
+                            SQL
+                        </h3>
+
+                        <p>
+                            Learn databases and query data effectively.
+                        </p>
+
+                        <button class="outline-btn">
+                            Explore →
+                        </button>
+
+                    </div>
+
+
+                    <div class="resource-card">
+
+                        <div class="resource-icon">
+                            📊
+                        </div>
+
+                        <h3>
+                            Data Analytics
+                        </h3>
+
+                        <p>
+                            Develop skills in Excel, Power BI and analytics.
+                        </p>
+
+                        <button class="outline-btn">
+                            Explore →
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= PRACTICE ================= -->
+
+            <div
+                class="page"
+                id="practice-page">
+
+                <div class="page-intro">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            PRACTICE ZONE
+                        </span>
+
+                        <h2>
+                            Practice & Improve
+                        </h2>
+
+                        <p>
+                            Strengthen your skills through regular practice.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="practice-grid">
+
+                    <div class="practice-card">
+
+                        <span>🟢</span>
+
+                        <h3>
+                            Easy
+                        </h3>
+
+                        <p>
+                            Build your fundamentals.
+                        </p>
+
+                        <strong>
+                            25 Problems
+                        </strong>
+
+                    </div>
+
+
+                    <div class="practice-card">
+
+                        <span>🟡</span>
+
+                        <h3>
+                            Medium
+                        </h3>
+
+                        <p>
+                            Improve your problem-solving.
+                        </p>
+
+                        <strong>
+                            40 Problems
+                        </strong>
+
+                    </div>
+
+
+                    <div class="practice-card">
+
+                        <span>🔴</span>
+
+                        <h3>
+                            Hard
+                        </h3>
+
+                        <p>
+                            Challenge yourself.
+                        </p>
+
+                        <strong>
+                            20 Problems
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <div class="content-card practice-list">
+
+                    <h3>
+                        Recommended Practice
+                    </h3>
+
+
+                    <div class="practice-item">
+
+                        <span>1</span>
+
+                        <div>
+
+                            <strong>
+                                Two Sum
+                            </strong>
+
+                            <p>
+                                Arrays • Easy
+                            </p>
+
+                        </div>
+
+                        <button class="outline-btn">
+                            Solve
+                        </button>
+
+                    </div>
+
+
+                    <div class="practice-item">
+
+                        <span>2</span>
+
+                        <div>
+
+                            <strong>
+                                Reverse a String
+                            </strong>
+
+                            <p>
+                                Strings • Easy
+                            </p>
+
+                        </div>
+
+                        <button class="outline-btn">
+                            Solve
+                        </button>
+
+                    </div>
+
+
+                    <div class="practice-item">
+
+                        <span>3</span>
+
+                        <div>
+
+                            <strong>
+                                Binary Search
+                            </strong>
+
+                            <p>
+                                Searching • Medium
+                            </p>
+
+                        </div>
+
+                        <button class="outline-btn">
+                            Solve
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= PROJECTS ================= -->
+
+            <div
+                class="page"
+                id="projects-page">
+
+                <div class="page-intro">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            BUILD & SHOWCASE
+                        </span>
+
+                        <h2>
+                            Projects
+                        </h2>
+
+                        <p>
+                            Turn your skills into projects for your portfolio.
+                        </p>
+
+                    </div>
+
+                    <button class="primary-btn">
+                        + Add Project
+                    </button>
+
+                </div>
+
+
+                <div class="project-grid">
+
+                    <div class="project-card">
+
+                        <div class="project-top">
+                            💼
+                        </div>
+
+                        <h3>
+                            Student Career Roadmap
+                        </h3>
+
+                        <p>
+                            A platform that helps students create
+                            personalized career paths.
+                        </p>
+
+                        <div class="tag-list">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+
+                        </div>
+
+                        <button class="outline-btn">
+                            View Project →
+                        </button>
+
+                    </div>
+
+
+                    <div class="project-card">
+
+                        <div class="project-top">
+                            📊
+                        </div>
+
+                        <h3>
+                            Data Analytics Dashboard
+                        </h3>
+
+                        <p>
+                            Analyze data and present meaningful insights
+                            through dashboards.
+                        </p>
+
+                        <div class="tag-list">
+
+                            <span>Excel</span>
+                            <span>Power BI</span>
+                            <span>SQL</span>
+
+                        </div>
+
+                        <button class="outline-btn">
+                            View Project →
+                        </button>
+
+                    </div>
+
+
+                    <div class="project-card">
+
+                        <div class="project-top">
+                            🤖
+                        </div>
+
+                        <h3>
+                            AI Learning Assistant
+                        </h3>
+
+                        <p>
+                            An AI assistant that helps students learn
+                            and solve doubts.
+                        </p>
+
+                        <div class="tag-list">
+
+                            <span>AI</span>
+                            <span>JavaScript</span>
+
+                        </div>
+
+                        <button class="outline-btn">
+                            View Project →
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= PROGRESS ================= -->
+
+            <div
+                class="page"
+                id="progress-page">
+
+                <div class="page-intro">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            YOUR GROWTH
+                        </span>
+
+                        <h2>
+                            Progress
+                        </h2>
+
+                        <p>
+                            Track your learning journey and achievements.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="progress-overview">
+
+                    <div class="progress-circle">
+
+                        <strong>
+                            18%
+                        </strong>
+
+                    </div>
+
+                    <div>
+
+                        <h3>
+                            You're making progress! 🚀
+                        </h3>
+
+                        <p>
+                            Keep learning consistently to reach your goal.
+                        </p>
+
+                        <div class="large-progress">
+
+                            <div style="width:18%"></div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="stats-grid">
+
+                    <div class="stat-card">
+
+                        <span>📚</span>
+
+                        <p>
+                            Topics Completed
+                        </p>
+
+                        <h3>
+                            12
+                        </h3>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <span>💻</span>
+
+                        <p>
+                            Projects
+                        </p>
+
+                        <h3>
+                            3
+                        </h3>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <span>🏆</span>
+
+                        <p>
+                            Certificates
+                        </p>
+
+                        <h3>
+                            2
+                        </h3>
+
+                    </div>
+
+
+                    <div class="stat-card">
+
+                        <span>🔥</span>
+
+                        <p>
+                            Learning Streak
+                        </p>
+
+                        <h3>
+                            7 Days
+                        </h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= CERTIFICATES ================= -->
+
+            <div
+                class="page"
+                id="certificates-page">
+
+                <div class="page-intro">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            ACHIEVEMENTS
+                        </span>
+
+                        <h2>
+                            Certificates
+                        </h2>
+
+                        <p>
+                            Keep track of your learning achievements.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="certificate-grid">
+
+                    <div class="certificate-card">
+
+                        <div class="certificate-icon">
+                            🏆
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                AWS Cloud Fundamentals
+                            </h3>
+
+                            <p>
+                                Amazon Web Services
+                            </p>
+
+                            <small>
+                                Completed • 2026
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="certificate-card">
+
+                        <div class="certificate-icon">
+                            🎓
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Agentic AI Fundamentals
+                            </h3>
+
+                            <p>
+                                AI Learning Program
+                            </p>
+
+                            <small>
+                                Completed • 2026
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="certificate-card add-certificate">
+
+                        <div class="certificate-icon">
+                            +
+                        </div>
+
+                        <h3>
+                            Add Certificate
+                        </h3>
+
+                        <p>
+                            Track your next achievement.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= AI ASSISTANT ================= -->
+
+            <div
+                class="page"
+                id="assistant-page">
+
+                <div class="ai-header">
+
+                    <div class="ai-big-icon">
+                        🤖
+                    </div>
+
+                    <div>
+
+                        <span class="eyebrow">
+                            GROWPATH AI
+                        </span>
+
+                        <h2>
+                            AI Learning Assistant
+                        </h2>
+
+                        <p>
+                            Ask questions, get explanations and improve your learning plan.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="chat-box">
+
+                    <div class="chat-message ai-message">
+
+                        <div class="chat-avatar">
+                            🤖
+                        </div>
+
+                        <div>
+
+                            <strong>
+                                GrowPath AI
+                            </strong>
+
+                            <p>
+                                Hi Archana! 👋 I'm your learning assistant.
+                                What would you like to learn today?
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="suggestions">
+
+                        <button>
+                            Explain Java simply
+                        </button>
+
+                        <button>
+                            Give me DSA practice
+                        </button>
+
+                        <button>
+                            What should I learn today?
+                        </button>
+
+                        <button>
+                            Suggest a project
+                        </button>
+
+                    </div>
+
+
+                    <div class="chat-input">
+
+                        <input
+                            type="text"
+                            id="chat-input"
+                            placeholder="Ask GrowPath AI anything..."
+                        >
+
+                        <button id="send-chat">
+                            Send
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= SETTINGS ================= -->
+
+            <div
+                class="page"
+                id="settings-page">
+
+                <div class="page-intro">
+
+                    <div>
+
+                        <span class="eyebrow">
+                            ACCOUNT
+                        </span>
+
+                        <h2>
+                            Settings
+                        </h2>
+
+                        <p>
+                            Manage your GrowPath preferences.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="content-card settings-card">
+
+                    <h3>
+                        Learning Preferences
+                    </h3>
+
+                    <label>
+                        Career Goal
+                    </label>
+
+                    <select>
+
+                        <option>
+                            Software Developer
+                        </option>
+
+                        <option>
+                            Data Analyst
+                        </option>
+
+                        <option>
+                            AI / ML Engineer
+                        </option>
+
+                    </select>
+
+
+                    <label>
+                        Daily Learning Time
+                    </label>
+
+                    <select>
+
+                        <option>
+                            1 Hour
+                        </option>
+
+                        <option>
+                            2 Hours
+                        </option>
+
+                        <option>
+                            3+ Hours
+                        </option>
+
+                    </select>
+
+
+                    <button class="primary-btn">
+                        Save Preferences
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
