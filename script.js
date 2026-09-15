@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const response =
                 await fetch(
-                    "http://localhost:5000/api/career-setup",
+                    "https://growpath-56kv.onrender.com/api/career-setup",
                     {
                         method: "POST",
 
@@ -191,7 +191,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const roadmapResponse =
                 await fetch(
-                    "http://localhost:5000/api/roadmap",
+                    "https://growpath-56kv.onrender.com/api/roadmap",
                     {
                         method: "POST",
 
@@ -627,7 +627,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
             const response =
                 await fetch(
-                    `http://localhost:5000/api/roadmap/${userId}`
+                    `https://growpath-56kv.onrender.com/api/roadmap/${userId}`
                 );
 
 
@@ -965,7 +965,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                                 const response =
                                     await fetch(
-                                        `http://localhost:5000/api/roadmap/${roadmapId}/skill/${skillId}`,
+                                        `https://growpath-56kv.onrender.com/api/roadmap/${roadmapId}/skill/${skillId}`,
                                         {
                                             method: "PUT",
 
